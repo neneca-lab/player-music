@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+body, html {
+  background-color: #333;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.fundo {
+  background-color: #171c24;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 10px 2px 21px 1px rgba(0, 0, 0, 0.363);
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 19px;
+}
+
+.descricao {
+  width: 300px;
+}
+
+.descricao > h2 {
+  margin-bottom: 5px;
+}
+
+.duracao {
+  width: 300px;
+  margin-top: 25px;
+}
+
+.barra {
+  display: flex;
+  width: 300px;
+  height: 6px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+progress {
+  height: 6px;
+  width: 0;
+  background-color: #333;
+}
+
+.ponto {
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-left: -10px;
+}
+
+.tempo {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  /*separa o maximo possivel os elementos*/
+}
+
+.player {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  /*separa bem pouco os elementos*/
+  align-items: center;
+  margin-top: 15px;
+}
+
+.botao-play, .botao-pause{
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.setas {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.botao-pause {
+  display: none;
+  /* esconde o botao de pause*/
+  cursor: pointer;
+}
